@@ -3,7 +3,7 @@
  */
 import { type Shims } from './registry';
 import { getRuntime as getWebRuntime } from './web-runtime';
-import { ReadStream as FsReadStream } from 'node:fs';
+import { ReadStream as FsReadStream } from 'fs';
 
 export function getRuntime(): Shims {
   const runtime = getWebRuntime();
